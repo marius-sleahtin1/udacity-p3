@@ -1,0 +1,53 @@
+# dotfile terraform directory which contains modules and providers
+**/.terraform
+
+# Terraform lock file -> We do not see the added value of this feature just yet
+**/**/.terraform.lock.hcl
+
+# Any keystore directory
+**/keystore/*
+
+# terraform state and backup
+**/*.tfstate
+**/*.tfstate.backup
+
+# terragrunt cache
+**/.terragrunt-cache
+
+# Terragrunt renderred JSON
+terragrunt_rendered.json
+
+# Terragrunt debug JSON file (when you use any terragrunt command alongside `--terragrunt-debug`)
+terragrunt-debug.tfvars.json
+
+# IDE personal settings
+.vscode
+.idea
+*.iml
+
+# Inner .env or .envrc files
+**/.env
+**/.envrc
+
+# Sensitive data
+*.secrets*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# pre-commit cache
+.cache
+
+poetry.lock
+pyproject.toml
+
+# TS
+index.zip
+node_modules
+*.sublime-*
+
+# MacOS
+**/.DS_Store
