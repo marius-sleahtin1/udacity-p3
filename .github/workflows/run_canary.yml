@@ -16,6 +16,6 @@ jobs:
       
     - name: Run Canary Script
       run: |
-        env
+        echo $AWS_ACCESS_KEY_ID
         #chmod +x starter/apps/canary/canary.sh
         #./starter/apps/canary/canary.sh
