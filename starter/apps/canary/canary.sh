@@ -29,7 +29,7 @@ function canary_deploy {
     ATTEMPTS=$((attempts + 1))
     sleep 1
   done
-  echo "Canary deployment of $DEPLOY_INCREMENTS replicas successful!"
+  echo "Canary deployment of 2 replicas successful!"
 }
 
 # Initialize canary-v2 deployment
