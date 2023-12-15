@@ -1,0 +1,19 @@
+name: Run Canary Script
+
+on:
+  push:
+    branches:
+      - main  # Change this to your branch name if needed
+
+jobs:
+  run_canary:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Run Canary Script
+      run: |
+        chmod +x starter/apps/canary/canary.sh
+        ./starter/apps/canary/canary.sh
