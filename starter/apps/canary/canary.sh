@@ -33,8 +33,8 @@ function canary_deploy {
 }
 
 # Initialize canary-v2 deployment
-kubectl apply -f index_v2_html.yml
-kubectl apply -f canary-v2.yml
+kubectl apply -f starter/apps/canary/index_v2_html.yml
+kubectl apply -f starter/apps/canary/canary-v2.yml
 
 #sleep 1
 # Begin canary deployment
