@@ -27,7 +27,7 @@ spec:
           livenessProbe:
             httpGet:
               port: 9000
-              path: /
+              path: / #/nginx_status --> there's no nginx into the app so the endpoint does not exists
             initialDelaySeconds: 2
             periodSeconds: 2
       nodeSelector:
