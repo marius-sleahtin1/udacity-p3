@@ -1,0 +1,36 @@
+# Although it could be fixed by changing the autoscaling (probably 3 nodes instead of 2 would be enough)i choose to increase EC2 size
+from medium to xlarge - it's fixed, it's working
+
+sleahtinm@E0773379 ~/udacity-p3/starter/infra (main)$ kubectl get po -A
+NAMESPACE     NAME                                  READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-6prl2                        1/1     Running   0          70s
+kube-system   aws-node-t6949                        1/1     Running   0          71s
+kube-system   coredns-5948f55769-j4h2x              1/1     Running   0          6m24s
+kube-system   coredns-5948f55769-xz4lx              1/1     Running   0          6m24s
+kube-system   kube-proxy-7gvb2                      1/1     Running   0          71s
+kube-system   kube-proxy-ptsf5                      1/1     Running   0          70s
+udacity       bloaty-mcbloatface-56bfff44df-4v4pc   1/1     Running   0          6m24s
+udacity       bloaty-mcbloatface-56bfff44df-52mlw   1/1     Running   0          6m23s
+udacity       bloaty-mcbloatface-56bfff44df-5k49m   1/1     Running   0          6m23s
+udacity       bloaty-mcbloatface-56bfff44df-5vd77   1/1     Running   0          6m23s
+udacity       bloaty-mcbloatface-56bfff44df-8bsrh   1/1     Running   0          6m25s
+udacity       bloaty-mcbloatface-56bfff44df-bnw22   1/1     Running   0          18m
+udacity       bloaty-mcbloatface-56bfff44df-bvrbh   1/1     Running   0          18m
+udacity       bloaty-mcbloatface-56bfff44df-clxrj   1/1     Running   0          6m25s
+udacity       bloaty-mcbloatface-56bfff44df-dnv5z   1/1     Running   0          6m23s
+udacity       bloaty-mcbloatface-56bfff44df-dw8kt   1/1     Running   0          6m22s
+udacity       bloaty-mcbloatface-56bfff44df-gzsk9   1/1     Running   0          6m24s
+udacity       bloaty-mcbloatface-56bfff44df-hs9n7   1/1     Running   0          6m25s
+udacity       bloaty-mcbloatface-56bfff44df-rgvjk   1/1     Running   0          18m
+udacity       bloaty-mcbloatface-56bfff44df-skw5t   1/1     Running   0          6m22s
+udacity       bloaty-mcbloatface-56bfff44df-sqxt6   1/1     Running   0          6m22s
+udacity       bloaty-mcbloatface-56bfff44df-tdclx   1/1     Running   0          6m22s
+udacity       bloaty-mcbloatface-56bfff44df-zlnh7   1/1     Running   0          18m
+udacity       canary-v1-84676f5bb7-c95sw            1/1     Running   0          6m25s
+udacity       canary-v1-84676f5bb7-sg9xw            1/1     Running   0          6m26s
+udacity       canary-v2-7b4d74dcb9-cnqqr            1/1     Running   0          6m24s
+udacity       canary-v2-7b4d74dcb9-v94hh            1/1     Running   0          6m25s
+udacity       green-6cf5bfcb78-58q48                1/1     Running   0          6m25s
+udacity       green-6cf5bfcb78-6r5mg                1/1     Running   0          6m25s
+udacity       green-6cf5bfcb78-bb895                1/1     Running   0          6m25s
+udacity       hello-world-7957b9db4f-fp97v          1/1     Running   0          6m24s
