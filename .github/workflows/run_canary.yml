@@ -15,5 +15,6 @@ jobs:
       
     - name: Run Canary Script
       run: |
-        chmod +x starter/apps/canary/canary.sh
-        ./starter/apps/canary/canary.sh
+        env
+        #chmod +x starter/apps/canary/canary.sh
+        #./starter/apps/canary/canary.sh
