@@ -8,6 +8,7 @@ on:
 jobs:
   run_canary:
     runs-on: ubuntu-latest
+    environment: udacity
     
     steps:
     - name: Checkout code
