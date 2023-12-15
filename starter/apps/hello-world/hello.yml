@@ -19,13 +19,15 @@ spec:
         - image: etapau/hello-world:udacity
           imagePullPolicy: Always
           name: hello-world
+#          command: ["/bin/sh"]
+#          args: ["-c", "while true; do echo hello; sleep 10;done"]
           ports:
             - containerPort: 9000
               protocol: TCP
           livenessProbe:
             httpGet:
               port: 9000
-              path: /nginx_status
+              path: /
             initialDelaySeconds: 2
             periodSeconds: 2
       nodeSelector:
