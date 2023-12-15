@@ -1,0 +1,238 @@
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:25:58 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:14:03 GMT
+< Connection: keep-alive
+< ETag: "657c511b-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 2</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:02 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:13:24 GMT
+< Connection: keep-alive
+< ETag: "657c50f4-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:04 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 11:51:19 GMT
+< Connection: keep-alive
+< ETag: "657c3db7-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:06 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:14:03 GMT
+< Connection: keep-alive
+< ETag: "657c511b-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 2</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:08 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:13:24 GMT
+< Connection: keep-alive
+< ETag: "657c50f4-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:09 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 11:51:19 GMT
+< Connection: keep-alive
+< ETag: "657c3db7-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:11 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:13:24 GMT
+< Connection: keep-alive
+< ETag: "657c50f4-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:13 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:14:04 GMT
+< Connection: keep-alive
+< ETag: "657c511c-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 2</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:14 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 13:13:24 GMT
+< Connection: keep-alive
+< ETag: "657c50f4-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact
+debug:~# 
+debug:~# 
+debug:~# curl -v canary-svc
+*   Trying 172.20.223.26:80...
+* Connected to canary-svc (172.20.223.26) port 80 (#0)
+> GET / HTTP/1.1
+> Host: canary-svc
+> User-Agent: curl/8.0.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.25.3
+< Date: Fri, 15 Dec 2023 13:26:16 GMT
+< Content-Type: text/html
+< Content-Length: 42
+< Last-Modified: Fri, 15 Dec 2023 11:51:19 GMT
+< Connection: keep-alive
+< ETag: "657c3db7-2a"
+< Accept-Ranges: bytes
+< 
+<html>
+<h1>This is version 1</h1>
+</html>
+* Connection #0 to host canary-svc left intact

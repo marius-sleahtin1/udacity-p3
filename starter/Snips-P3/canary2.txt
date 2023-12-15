@@ -1,0 +1,11 @@
+sleahtinm@E0773379 ~/udacity-p3/starter/apps/canary (main)$ kubectl get po -n udacity
+NAME                           READY   STATUS    RESTARTS   AGE
+blue-6b6b7cf74d-46wk2          1/1     Running   0          96m
+blue-6b6b7cf74d-4g8cj          1/1     Running   0          98m
+blue-6b6b7cf74d-69q49          1/1     Running   0          96m
+canary-v1-84676f5bb7-9xqmp     1/1     Running   0          16m
+canary-v1-84676f5bb7-w8mzc     1/1     Running   0          98m
+canary-v2-7b4d74dcb9-h4rs6     1/1     Running   0          15m
+canary-v2-7b4d74dcb9-q4h88     1/1     Running   0          15m
+hello-world-7957b9db4f-x6f9v   1/1     Running   0          98m
+sleahtinm@E0773379 ~/udacity-p3/starter/apps/canary (main)$ 
