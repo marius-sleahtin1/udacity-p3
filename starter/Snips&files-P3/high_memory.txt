@@ -1,1 +1,1 @@
-bloaty-mcbloatface uses the most memory as it has lots of deployment instances (17) * 5mb each
+hello-world uses the most memory 19Mi

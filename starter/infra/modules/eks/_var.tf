@@ -5,7 +5,7 @@ variable "vpc_id" {}
 
 variable "instance_type" {
   description = "EC2 instance type to use for the argo EC2 instances."
-  default     = "t3.xlarge" #"t3.medium" -- changed ec2 type to have more CPU
+  default     = "t3.medium"
 }
 
 variable "nodes_desired_size" {
